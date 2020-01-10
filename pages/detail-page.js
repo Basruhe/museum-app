@@ -31,8 +31,6 @@ let submitComment = function () {  // adding the event handler
   // displaying the combined element
   commentSection = getElementById("comment")
   console.log (commentSection)
-  
-  
 }
 
 
