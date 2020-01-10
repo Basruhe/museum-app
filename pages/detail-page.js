@@ -26,8 +26,12 @@ let submitComment = function () {  // adding the event handler
   comment.classList.add('comment')
   comment.appendChild(h3)
   comment.appendChild(p)
-
   console.log(comment)
+
+  // displaying the combined element
+  commentSection = getElementById("comment")
+  console.log (commentSection)
+  
   
 }
 
