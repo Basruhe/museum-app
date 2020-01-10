@@ -28,8 +28,6 @@ let submitComment = function () {  // adding the event handler
   comment.appendChild(p)
 
   console.log(comment)
-
-
   
 }
 
