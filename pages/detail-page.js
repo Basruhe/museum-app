@@ -5,6 +5,9 @@
 
 let submitComment = function () {  // adding the event handler
   
+
+
+  
   // data gathering
   console.log("button is clicked");
   const inputField = document.getElementById('name')  // grabbing the element
@@ -36,6 +39,24 @@ let submitComment = function () {  // adding the event handler
   inputField.value=null;
   textArea.value=null;
 
+  if(doesNotPassAllValidations(name, msg)){
+    return null
+  }
+
 }
 
+function doesNotPassAllValidations(name, msg) {
+  if ( !name || !msg) {
+    alert ('You forgot to fill in your name or message!')
+    console.log("Either no name or no message added")
+    return true;
+  }
 
+  if (msg.length >200) {
+    alert('Comment too long')
+    console.log("the comment is too long")
+    return false;
+  }  
+    
+  }
+ 
