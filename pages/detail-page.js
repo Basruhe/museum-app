@@ -23,14 +23,19 @@ let submitComment = function () {  // adding the event handler
   // combine the gathered data with the created elements
   h3.innerHTML = `${name} said:`
   p.innerHTML = msg
-  comment.classList.add('comment')
+  comment.classList.add('comment')   //whats this for?
   comment.appendChild(h3)
   comment.appendChild(p)
   console.log(comment)
 
   // displaying the combined element
-  commentSection = getElementById("comment")
+  const commentSection = document.getElementById('comments');
+  commentSection.appendChild(comment);
   console.log (commentSection)
+
+  inputField.value=null;
+  textArea.value=null;
+
 }
 
 
